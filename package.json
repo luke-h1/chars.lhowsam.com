@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "bun run build && vc --prod -f",
     "test": "bun test",
     "astro": "astro"
   },
