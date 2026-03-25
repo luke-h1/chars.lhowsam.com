@@ -1,0 +1,61 @@
+---
+import CharacterPicker from "../components/CharacterPicker";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dynamic Character Picker</title>
+    <style is:global>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(165deg, #eff6ff 0%, #f8fafc40%, #fff 48%);
+      }
+      main {
+        padding: 2rem 1rem 3rem;
+      }
+      h1 {
+        text-align: center;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        color: #0f172a;
+        margin: 0 0 0.5rem;
+        letter-spacing: -0.02em;
+      }
+      .sub {
+        text-align: center;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        color: #64748b;
+        font-size: 1rem;
+        margin: 0 auto 1.5rem;
+        max-width: 32rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Pick characters from a string</h1>
+      <CharacterPicker client:load />
+    </main>
+  </body>
+</html>

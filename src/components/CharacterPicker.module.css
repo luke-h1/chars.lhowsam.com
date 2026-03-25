@@ -1,0 +1,178 @@
+.wrap {
+	max-width: 42rem;
+	margin: 0 auto;
+	padding: 1.25rem;
+	font-family:
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		sans-serif;
+	color: #0f172a;
+}
+
+.label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #475569;
+	margin-bottom: 0.35rem;
+}
+
+.field {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.65rem 0.75rem;
+	font-size: 1rem;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	background: #fff;
+	margin-bottom: 0.25rem;
+}
+
+.field:focus {
+	outline: 2px solid #2563eb;
+	outline-offset: 1px;
+	border-color: #2563eb;
+}
+
+.hint {
+	font-size: 0.85rem;
+	color: #64748b;
+	margin: 0 0 1rem;
+}
+
+.fieldGroup {
+	margin-bottom: 1rem;
+}
+
+.error {
+	font-size: 0.875rem;
+	color: #b91c1c;
+	margin: 0.35rem 0 0;
+}
+
+.previewBox {
+	margin: 1.25rem 0;
+	padding: 1rem;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 10px;
+}
+
+.previewLabel {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #64748b;
+	margin-bottom: 0.5rem;
+}
+
+.previewString {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+	font-size: 1.05rem;
+	line-height: 1.7;
+	word-break: break-all;
+	letter-spacing: 0.02em;
+}
+
+.char {
+	display: inline;
+	border-radius: 3px;
+	padding: 0.05em 0;
+	transition: background 0.12s ease;
+}
+
+.charActive {
+	background: #fde68a;
+	box-shadow: 0 0 0 1px #f59e0b;
+}
+
+.resultsHeader {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	margin: 1.25rem 0 0.5rem;
+}
+
+.resultsTitle {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.copyBtn {
+	font-size: 0.875rem;
+	padding: 0.45rem 0.85rem;
+	border-radius: 8px;
+	border: 1px solid #cbd5e1;
+	background: #fff;
+	cursor: pointer;
+	color: #0f172a;
+}
+
+.copyBtn:hover:not(:disabled) {
+	background: #f1f5f9;
+}
+
+.copyBtn:disabled {
+	opacity: 0.45;
+	cursor: not-allowed;
+}
+
+.tableWrap {
+	overflow-x: auto;
+	border: 1px solid #e2e8f0;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+	padding: 0.6rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+	background: #f8fafc;
+	font-weight: 600;
+	font-size: 0.8rem;
+	color: #475569;
+}
+
+.table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.mono {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.emptyState {
+	font-size: 0.9rem;
+	color: #64748b;
+	margin: 0.5rem 0 0;
+}
+
+@keyframes copiedFlash {
+	from {
+		background: #dcfce7;
+	}
+	to {
+		background: #fff;
+	}
+}
+
+.copied {
+	animation: copiedFlash 0.6s ease;
+}
